@@ -114,7 +114,7 @@ INPUT:
 ### Example
 ```
 TASK:
-Fixing grammar mistake
+Fixing grammar mistake & paraphrasing
 
 -----------------------
 PROMPT: 
