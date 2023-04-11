@@ -3,11 +3,13 @@ Best Practices Of Using Chatgpt Like a Pro
 
 # Table of Contents
 
-1. [Different models & alternatives](#different-models--alternatives)
-2. [Common mistakes](#common-mistakes)
-3. [Writing prompts](#writing-prompts)
-4. [Different markdowns and styling](#different-markdowns-and-styling)
-5. [Structured prompt](#structured-prompt)
+1. [Different models](#different-models--alternatives)
+2. [Alternatives & Tools](#alternatives)
+3. [Common mistakes](#common-mistakes)
+4. [Writing prompts](#writing-prompts)
+5. [Different markdowns and styling](#different-markdowns-and-styling)
+6. [Structured prompt](#structured-prompt)
+7. [Examples](#examples)
 
 
 
@@ -16,7 +18,7 @@ Best Practices Of Using Chatgpt Like a Pro
 
 ## Models
 
-[Click to see the refferance from OpenAI](https://openai.com/blog/chatgpt)
+[Click to see the refferance from OpenAI](https://platform.openai.com/docs/models)
 
 | Model | Uses Cases | Name | Status |
 |----------|------------|------|------|
@@ -27,10 +29,10 @@ Best Practices Of Using Chatgpt Like a Pro
 | DALL-E | A model that can generate and edit images given a natural language prompt | DALL-E  |  Private-Beta |
 
 
-## Alternatives 
+## Alternatives
 
-### [The Bai](https://chatbot.theb.ai/#/chat)
-
+  #### [The Bai - A free chatgpt that uses 3.5](https://chatbot.theb.ai/#/chat)
+  #### [Open-source fully autonomous application showcasing Chat GPT](https://github.com/Torantulino/Auto-GPT)
 
 
 
@@ -58,12 +60,12 @@ Here are 5 useful prompt that you may use
 
 2. **Remember all our conversation again, and read this code that I will send you below. just write "OK" as respond to my text, and load the codes in your memory for future use case** : This prompt is used to inject up-to-date details to chatGpt, then you may rename the conversation and keep it and re-use it in future, for example chatgpt doesn't know django 4.2 is released but through django chanelogs, you may update him and have an updated chatgpt that knows django 4.2 is out and what has changed!
 
-3. ** Remember all our conversation again and read the codes I've sent you previously. Now that you've seen all the code, I want you to do: ** This prompts is like the 
+3. **Remember all our conversation again and read the codes I've sent you previously. Now that you've seen all the code, I want you to do:** This prompts is like the 
 
-4. ** Read ... from book .. **: This prompt will  load resources from a book, and it helps very much with the answer that chatgpt is providing for you, because you'll redirect chatgpt to use more useful content.
+4. **Read ... from book ..** : This prompt will  load resources from a book, and it helps very much with the answer that chatgpt is providing for you, because you'll redirect chatgpt to use more useful content.
 
 
-5. ** Use documention, refferance and papers to backup your answer **: this prompt will redirect chatgpt to more scholar and academic answers
+5. **Use documention, refferance and papers to backup your answer** : this prompt will redirect chatgpt to more scholar and academic answers
 
 
 
@@ -72,9 +74,17 @@ Here are 5 useful prompt that you may use
 
 Here are 2 useful prompt that you may use to change the styling of chatgpt answers
 
-1. ** Sketch the table with column as ..../.../.../.../ **
+1. **Sketch the table with column as ..../.../.../.../**
+Example:
+```
+compare python and java
 
-2. ** write me an article in coding's markdown
+use a table
+Column 1 python, column 2 Java
+Rows: Pros / Cons / Speed / Clean code pratices / careers / use cases / and include 10 other row as well
+```
+
+2. **write me an article in coding's markdown**
 
 
 
@@ -96,7 +106,36 @@ PROMPT:
 3.  ...
 
 -----------------------
-MESSAGE: 
+INPUT: 
 
 
 ```
+
+### Example
+```
+TASK:
+Fixing grammar mistake
+
+-----------------------
+PROMPT: 
+1. Act as grammarly extension which fixes grammar mistake
+2. Rephrase 99% of words in the article
+3. Rewrite it using a Human Tone
+4. Make it to not be detected by plagiarism checker
+
+
+-----------------------
+INPUT: 
+
+Astronomers using the James Webb Space Telescope (JWST) have just discovered the four most distant galaxies ever seen, located a little over 13 billion light-years from Earth. This means astronomers are seeing what galaxies looked like only 300 to 500 million years after the Big Bang, in the infancy of our now almost 14 billion-year-old universe, according to two new(opens in new tab) studies(opens in new tab) published April 4 in the journal Nature Astronomy.
+
+"The frontier is moving almost every month," Pieter van Dokkum(opens in new tab), a professor of astronomy at Yale University who was not involved in the studies, said in a commentary(opens in new tab) published in Nature Astronomy. There are now "only 300 million years of unexplored history of the universe between these galaxies and the Big Bang," van Dokkum added.
+
+This may sound like familiar news, as several studies have recently claimed possible detections of even older galaxies using JWST in the past few months. The four newly discovered galaxies are different, though — astronomers have actually confirmed these are ancient galaxies and not some other celestial body, or a closer-by galaxy masquerading as a more distant one.
+```
+
+
+
+## Examples
+
+[Django Expert Support Bot](https://github.com/ManiMozaffar/django-expert-bot)
